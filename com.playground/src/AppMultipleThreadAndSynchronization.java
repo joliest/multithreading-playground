@@ -1,13 +1,21 @@
 public class AppMultipleThreadAndSynchronization {
     public static int counter1 = 0;
     public static int counter2 = 0;
+
+    // resolving 1 intrinsic lock per 1 object
+    // counter1 and counter 2 will no longer share the same intrinsic lock
+    private static final Object lock1 = new Object();
+    private static final Object lock2 = new Object();
     public static synchronized void increment1() {
-        synchronized (App.class) {
+        // independent lock, will be locked using lock 1
+        // no need for counter2 to complete
+        synchronized (lock1) {
             counter1++;
         }
     }
     public static synchronized void increment2() {
-        synchronized (App.class) {
+        // independent lock
+        synchronized (lock2) {
             counter2++;
         }
     }
