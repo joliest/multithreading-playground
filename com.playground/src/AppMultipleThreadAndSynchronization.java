@@ -1,14 +1,22 @@
 public class AppMultipleThreadAndSynchronization {
-    public static int counter = 0;
-    public static synchronized void increment() {
-        counter++;
+    public static int counter1 = 0;
+    public static int counter2 = 0;
+    public static synchronized void increment1() {
+        synchronized (App.class) {
+            counter1++;
+        }
+    }
+    public static synchronized void increment2() {
+        synchronized (App.class) {
+            counter2++;
+        }
     }
     public static void process() {
         Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {
                 for (int i = 0; i < 100; ++i) {
-                    increment();
+                    increment1();
                 }
             }
         });
@@ -16,7 +24,7 @@ public class AppMultipleThreadAndSynchronization {
             @Override
             public void run() {
                 for (int i = 0; i < 100; ++i) {
-                    increment();
+                    increment2();
                 }
             }
         });
@@ -29,7 +37,8 @@ public class AppMultipleThreadAndSynchronization {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("The counter is " + counter);
+        System.out.println("The counter1 is " + counter1);
+        System.out.println("The counter2 is " + counter2);
     }
     public static void main(String[] args) {
         process();
