@@ -23,9 +23,9 @@ public class CalculateFibonacci extends RecursiveTask<Integer> {
 
         int num1 = cf1.join();
         int num2 = cf2.join();
-        int sum = cf1.join() + cf2.join();
+        int sum = num1 + num2;
         System.out.println(String.format("%s+%s=%s", num1, num2, sum));
 
-        return cf1.join() + cf2.join();
+        return sum;
     }
 }
