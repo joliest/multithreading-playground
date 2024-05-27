@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/com.exercises.diningphilosophersproblem/com.exercises.diningphilosophersproblem.iml" filepath="$PROJECT_DIR$/com.exercises.diningphilosophersproblem/com.exercises.diningphilosophersproblem.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.exercises2.studentlibraryproblem/com.exercises2.studentlibraryproblem.iml" filepath="$PROJECT_DIR$/com.exercises2.studentlibraryproblem/com.exercises2.studentlibraryproblem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.javastreams/com.javastreams.iml" filepath="$PROJECT_DIR$/com.javastreams/com.javastreams.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.parallelcomputing/com.parallelcomputing.iml" filepath="$PROJECT_DIR$/com.parallelcomputing/com.parallelcomputing.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.playground/com.playground.iml" filepath="$PROJECT_DIR$/com.playground/com.playground.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/multithreading-playground.iml" filepath="$PROJECT_DIR$/.idea/multithreading-playground.iml" />
     </modules>
