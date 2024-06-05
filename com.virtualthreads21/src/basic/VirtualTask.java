@@ -1,8 +1,7 @@
 package basic;
 
-public class VirtualTask implements Runnable {
-    @Override
-    public void run() {
+public class VirtualTask {
+    public static void run() {
         System.out.println("Started ..." + Thread.currentThread().getName());
 
         try {
