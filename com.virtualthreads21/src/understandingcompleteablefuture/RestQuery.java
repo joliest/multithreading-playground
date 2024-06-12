@@ -1,4 +1,4 @@
-package understandingfutures;
+package understandingcompleteablefuture;
 
 public class RestQuery {
     public static String run() {

@@ -1,4 +1,4 @@
-package understandingfutures;
+package understandingcompleteablefuture;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executors;

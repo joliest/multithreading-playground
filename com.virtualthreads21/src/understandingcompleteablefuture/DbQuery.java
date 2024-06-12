@@ -1,6 +1,4 @@
-package understandingfutures;
-
-import java.util.concurrent.Callable;
+package understandingcompleteablefuture;
 
 public class DbQuery {
     public static String run() {
